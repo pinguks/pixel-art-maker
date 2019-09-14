@@ -1,0 +1,16 @@
+.Palette {
+  display: grid;
+  grid-template: repeat(6, 50px) / repeat(3, 50px);
+  grid-gap: 4px;
+  cursor: pointer;
+}
+
+.Palette-box {
+  border: 2px solid #fff;
+}
+
+@media (max-width: 850px) {
+  .Palette {
+    grid-template: repeat(3, 50px) / repeat(6, 50px);
+  }
+}

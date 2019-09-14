@@ -1,0 +1,22 @@
+.Tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40%;
+}
+
+.Tools * {
+  cursor: pointer;
+}
+
+.active {
+  transform: scale(1.1);
+}
+
+@media (max-width: 850px) {
+  .Tools {
+    flex-direction: row;
+    width: 100%;
+    height: 0;
+  }
+}
